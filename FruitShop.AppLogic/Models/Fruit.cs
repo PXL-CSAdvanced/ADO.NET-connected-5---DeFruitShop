@@ -8,11 +8,12 @@ namespace FruitShop.AppLogic.Models
 {
     class Fruit
     {
-        public int Id { get; set; }
-        
-        public Fruit()
+
+
+        public override string ToString()
         {
-                
+            //TODO: implement functionality
+            throw new NotImplementedException();
         }
     }
 }

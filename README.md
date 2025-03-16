@@ -37,7 +37,6 @@ INSERT INTO Fruit (Name, Color, Season)
 - Implementeer alle methodes die in de *Data* klasse beschreven staan
 
 ## Vereisten
-### FruitWindow
 #### Startup
 - Tijdens het laden van het FruitWindow moet de connectionstring uit het settings-bestand worden ingelezen. De waarde ervan wordt doorgegeven aan de ConnectionString eigenschap van de data klasse
 - Nadat de connectiestring is ingevuld moet de fruitListBox gevuld worden met de data uit de Fruit tabel van de database

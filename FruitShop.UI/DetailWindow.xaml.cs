@@ -23,5 +23,14 @@ namespace FruitShop.UI
         {
             InitializeComponent();
         }
+
+        //TODO: Create property FruitToDisplay of type Fruit
+
+        private void ShowFruitProperties()
+        {
+            //idTextBox.Text = FruitToDisplay.Id;
+            //nameTextBox.Text = FruitToDisplay.Name;
+            //...
+        }
     }
 }
