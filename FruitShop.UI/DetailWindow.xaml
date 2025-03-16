@@ -14,7 +14,13 @@
         <Label Content="Kleur: " Margin="5"/>
         <TextBox x:Name="colorTextBox" Padding="5" Margin="5" />
         <Label Content="Seizoen: " Margin="5"/>
-        <TextBox x:Name="seasonTextBox" Padding="5" Margin="5" />
+        <ComboBox x:Name="seasonTextBox" Padding="5" Margin="5" >
+            <ComboBoxItem>Lente</ComboBoxItem>
+            <ComboBoxItem>Zomer</ComboBoxItem>
+            <ComboBoxItem>Herfst</ComboBoxItem>
+            <ComboBoxItem>Winter</ComboBoxItem>
+            <ComboBoxItem>Hele jaar</ComboBoxItem>
+        </ComboBox>
 
         <Grid Margin="0,10,0,10">
             <Grid.ColumnDefinitions>

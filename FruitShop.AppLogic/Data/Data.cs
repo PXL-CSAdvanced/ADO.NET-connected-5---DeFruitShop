@@ -10,6 +10,8 @@ namespace FruitShop.AppLogic.Data
 {
     static class Data
     {
+        public static string ConnectionString { private get;  set; }
+
         public static int CreateFruit(Fruit fruit)
         {
             throw new NotImplementedException();
