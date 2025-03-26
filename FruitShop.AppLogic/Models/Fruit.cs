@@ -10,10 +10,6 @@ namespace FruitShop.AppLogic.Models
     {
 
 
-        public override string ToString()
-        {
-            //TODO: implement functionality
-            throw new NotImplementedException();
-        }
+
     }
 }

@@ -17,9 +17,9 @@ namespace FruitShop.UI
     /// <summary>
     /// Interaction logic for DetailWindow.xaml
     /// </summary>
-    public partial class DetailWindow : Window
+    public partial class CreateWindow : Window
     {
-        public DetailWindow()
+        public CreateWindow()
         {
             InitializeComponent();
         }
