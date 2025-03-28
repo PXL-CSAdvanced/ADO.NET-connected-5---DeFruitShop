@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 
 namespace FruitShop.AppLogic.Models
 {
-    class Fruit
+    public class Fruit
     {
-
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Color { get; set; }
+        public string Season { get; set; }
 
 
     }

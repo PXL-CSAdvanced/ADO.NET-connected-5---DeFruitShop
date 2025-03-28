@@ -1,16 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using FruitShop.AppLogic.Data;
+using FruitShop.AppLogic.Models;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace FruitShop.UI
 {
@@ -22,6 +12,33 @@ namespace FruitShop.UI
         public FruitWindow()
         {
             InitializeComponent();
+
+            FruitData.ConnectionString = Settings.Default.ConnectionString;
+            FruitData.GetAllFruit();
+            fruitDataGrid.ItemsSource = FruitData.Fruits;
+        }
+
+        private void createFruitButton_Click(object sender, RoutedEventArgs e)
+        {
+            CreateWindow window= new CreateWindow();
+            if(window.ShowDialog() == true)
+            {
+                fruitDataGrid.Items.Refresh();
+                fruitDataGrid.SelectedItem = window.CreatedFruit;
+            }
+        }
+
+        private void deleteFruitButton_Click(object sender, RoutedEventArgs e)
+        {
+            Fruit selectedFruit = fruitDataGrid.SelectedItem as Fruit;
+
+            if (selectedFruit is not null)
+            {
+                if(FruitData.DeleteFruit(selectedFruit.Id))
+                {
+                    fruitDataGrid.Items.Refresh();
+                }
+            }
         }
     }
 }

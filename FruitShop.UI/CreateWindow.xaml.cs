@@ -1,16 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using FruitShop.AppLogic.Data;
+using FruitShop.AppLogic.Models;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace FruitShop.UI
 {
@@ -24,13 +14,32 @@ namespace FruitShop.UI
             InitializeComponent();
         }
 
-        //TODO: Create property FruitToDisplay of type Fruit
+        private Fruit _createdFruit;
 
-        private void ShowFruitProperties()
+        public Fruit CreatedFruit
         {
-            //idTextBox.Text = FruitToDisplay.Id;
-            //nameTextBox.Text = FruitToDisplay.Name;
-            //...
+            get { return _createdFruit; }
+        }
+
+
+        private void cancelButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.DialogResult = false;
+            this.Close();
+        }
+
+        private void saveButton_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                _createdFruit = FruitData.CreateFruit(nameTextBox.Text, colorTextBox.Text, seasonComboBox.Text);
+                this.DialogResult = true;
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

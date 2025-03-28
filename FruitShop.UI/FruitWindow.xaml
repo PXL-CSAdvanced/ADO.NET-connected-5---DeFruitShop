@@ -19,8 +19,8 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Button x:Name="createFruitButton" Grid.Column="0" Margin="5" Padding="10" Content="Create"/>
-            <Button x:Name="deleteFruitButton" Grid.Column="1" Margin="5" Padding="10" Content="Delete"/>
+            <Button x:Name="createFruitButton" Grid.Column="0" Margin="5" Padding="10" Content="Create" Click="createFruitButton_Click"/>
+            <Button x:Name="deleteFruitButton" Grid.Column="1" Margin="5" Padding="10" Content="Delete" Click="deleteFruitButton_Click"/>
         </Grid>
     </Grid>
 </Window>
