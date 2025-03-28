@@ -1,5 +1,7 @@
 # ADO.NET connected 5 - De FruitShop
 
+![FruitShop](./media/fruitshop.gif)
+
 ## Setup
 ### Database
 - Maak een nieuwe database aan met de naam ```FruitDb``` (gebruik hiervoor SSMS)
