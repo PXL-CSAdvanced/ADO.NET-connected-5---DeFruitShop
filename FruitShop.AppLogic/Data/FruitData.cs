@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace FruitShop.AppLogic.Data
 {
-    static class Data
+    static class FruitData
     {
         public static string ConnectionString { private get;  set; }
 
@@ -20,8 +20,11 @@ namespace FruitShop.AppLogic.Data
         }
 
 
-        public static int CreateFruit(Fruit fruit)
+        public static Fruit CreateFruit(string name, string color, string season)
         {
+            //TODO: Create a unique id for the fruit using the GetMaxFruitId function
+            //TODO: Create a fruit record in the database with the given parameters (use SqlParameters!)
+            //TODO: Return a new fruit object
             throw new NotImplementedException();
         }
 
@@ -30,13 +33,17 @@ namespace FruitShop.AppLogic.Data
             throw new NotImplementedException();
         }
 
-        public static int DeleteFruit(int id)
+        public static bool DeleteFruit(int id)
         {
+            //TODO: Delete the fruit with the given id from the database
+            //TODO: Remove the fruit from the _fruits list
             throw new NotImplementedException();
         }
 
-        public static List<Fruit> GetAllFruit()
+        public static void LoadAllFruits()
         {
+            //TODO: Load all fruits from the database
+            //TODO: Add all records as a Fruit object to the _fruits list
             throw new NotImplementedException();
         }
     }

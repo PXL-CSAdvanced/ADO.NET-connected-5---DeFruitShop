@@ -10,6 +10,5 @@ namespace FruitShop.AppLogic.Models
     {
 
 
-
     }
 }

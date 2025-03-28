@@ -12,7 +12,7 @@
         <Label Content="Kleur: " Margin="5"/>
         <TextBox x:Name="colorTextBox" Padding="5" Margin="5" />
         <Label Content="Seizoen: " Margin="5"/>
-        <ComboBox x:Name="seasonTextBox" Padding="5" Margin="5" >
+        <ComboBox x:Name="seasonComboBox" Padding="5" Margin="5" >
             <ComboBoxItem>Lente</ComboBoxItem>
             <ComboBoxItem>Zomer</ComboBoxItem>
             <ComboBoxItem>Herfst</ComboBoxItem>
