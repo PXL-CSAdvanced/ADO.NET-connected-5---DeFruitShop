@@ -88,7 +88,7 @@ namespace FruitShop.AppLogic.Data
             }
         }
 
-        public static void GetAllFruit()
+        public static void LoadAllFruits()
         {
             using (SqlConnection connection = new SqlConnection(ConnectionString))
             {

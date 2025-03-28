@@ -14,7 +14,7 @@ namespace FruitShop.UI
             InitializeComponent();
 
             FruitData.ConnectionString = Settings.Default.ConnectionString;
-            FruitData.GetAllFruit();
+            FruitData.LoadAllFruits();
             fruitDataGrid.ItemsSource = FruitData.Fruits;
         }
 
